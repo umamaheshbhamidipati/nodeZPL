@@ -1,0 +1,5 @@
+<button mat-raised-button color="primary" (click)="callPrinter();">Print</button>
+<p style="text-align: center;">{{counter}} / {{FullLength}}</p>
+<p style="text-align: center;color: green;" *ngIf="statusMsg == 'ALERT: PQ JOB COMPLETED [ZEBRA_GT800_DHAN]\r\n'">{{statusMsg}}</p>
+<p style="text-align: center;color: red;" *ngIf="statusMsg != 'ALERT: PQ JOB COMPLETED [ZEBRA_GT800_DHAN]\r\n'">{{statusMsg}}</p>
+<router-outlet></router-outlet>
